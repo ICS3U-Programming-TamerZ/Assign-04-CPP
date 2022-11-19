@@ -64,14 +64,11 @@ int main() {
         // Code executed if user entered a number for length and width
     } else {
         while (timesInt >= counter) {
-            sum = sum + counter;
-            sum = length * width;
+            counter = counter + 1;
             length = length * 2;
             width = width * 2;
-            counter = counter + 1;
-            std::cout << "Your product is " << sum << " cm.\n\n";
+            sum = length * width;
+            std::cout << "Your product is " << sum << " cm^2.\n\n";
         }
-        std::cout << "The sum of the consecutive positive integers preceding ";
-        std::cout << timesInt << " is " << sum << ".\n";
     }
 }
